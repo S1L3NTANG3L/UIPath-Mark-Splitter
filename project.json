@@ -4,6 +4,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "BalaReva.Excel.Activities": "[2021.0.0]",
+    "BalaReva.Externals.Activities": "[4.0.3]",
     "UiPath.Excel.Activities": "[2.4.6884.25683]",
     "UiPath.System.Activities": "[22.10.0-preview]",
     "UiPath.UIAutomation.Activities": "[22.10.0-preview]"
