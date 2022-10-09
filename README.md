@@ -2,7 +2,7 @@
 Tiny UIPath automation process I wrote to take the given markschema and create an individual marksheet for each student and print it to there feedback folder.</br>
 ## Using Steps
 1. Place mark schema and mark template in root folder of efundi download folder.
-2. Not edown the sheet names in each spreadsheet **NB The sheet name is case sensitive**
+2. Note down the sheet names in each spreadsheet **NB The sheet name is case sensitive**
 3. Make sure the template will print correctly before starting the process.
 4. Run the process.
 5. Choose the markschema file.
