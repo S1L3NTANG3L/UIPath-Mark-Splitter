@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848,4776.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bew="clr-namespace:BalaReva.Excel.WorkBook;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,4776.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bew="clr-namespace:BalaReva.Excel.WorkBook;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -137,14 +137,14 @@
         </ui:InputDialog.Result>
       </ui:InputDialog>
       <ui:SelectFolder DisplayName="Browse For Root Folder" sap:VirtualizedContainerService.HintSize="595.2,80" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[rootFolderPath]" />
-      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read Row" sap:VirtualizedContainerService.HintSize="595.2,119.2" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
+      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="595.2,119.2" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadRow>
-      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each" sap:VirtualizedContainerService.HintSize="595.2,3263.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each studentNumber" sap:VirtualizedContainerService.HintSize="595.2,3263.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -157,7 +157,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <WriteLine DisplayName="Write Student Number To Console" sap:VirtualizedContainerService.HintSize="518.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[studentNumber.ToString]" />
-              <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="518.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign DisplayName="Assign columnNumber" sap:VirtualizedContainerService.HintSize="518.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[columnNumber]</OutArgument>
                 </Assign.To>
@@ -166,7 +166,7 @@
                 </Assign.Value>
               </Assign>
               <WriteLine DisplayName="Write Column Number To Console" sap:VirtualizedContainerService.HintSize="518.4,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;Column Number: &quot;+ (columnNumber+1).toString()]" />
-              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber+1 &gt; 3]" DisplayName="If Statement" sap:VirtualizedContainerService.HintSize="518.4,2709.6" sap2010:WorkflowViewState.IdRef="If_8">
+              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber+1 &gt; 3]" DisplayName="If columnNumber+1 &gt; 3" sap:VirtualizedContainerService.HintSize="518.4,2709.6" sap2010:WorkflowViewState.IdRef="If_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,14 +185,14 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xD;&#xA;" Cell="D1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="441.6,160" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
+                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xD;&#xA;" Cell="D1" DisplayName="Write D1 Cell" sap:VirtualizedContainerService.HintSize="441.6,160" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteCell>
-                    <Assign sap2010:Annotation.AnnotationText="Clear previous column letter." sap:VirtualizedContainerService.HintSize="441.6,91.2" sap2010:WorkflowViewState.IdRef="Assign_18">
+                    <Assign sap2010:Annotation.AnnotationText="Clear previous column letter." DisplayName="Assign columnLetter" sap:VirtualizedContainerService.HintSize="441.6,91.2" sap2010:WorkflowViewState.IdRef="Assign_18">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[columnLetter]</OutArgument>
                       </Assign.To>
@@ -207,7 +207,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="While loop used to convert the column number to the column letter." DisplayName="While" sap:VirtualizedContainerService.HintSize="441.6,564" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="While loop used to convert the column number to the column letter." DisplayName="While columnNumber&gt;0" sap:VirtualizedContainerService.HintSize="441.6,564" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                       <ui:InterruptibleWhile.Body>
                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,352.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
                           <sap:WorkflowViewStateService.ViewState>
@@ -215,7 +215,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                          <Assign DisplayName="Assign modulo" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[modulo]</OutArgument>
                             </Assign.To>
@@ -223,7 +223,7 @@
                               <InArgument x:TypeArguments="x:Int32" xml:space="preserve">[columnNumber  mod 26]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                          <Assign DisplayName="Assign columnLetter" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[columnLetter]</OutArgument>
                             </Assign.To>
@@ -231,7 +231,7 @@
                               <InArgument x:TypeArguments="x:String">[Convert.ToChar(65 + modulo) + columnLetter]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                          <Assign DisplayName="Assign  columnNumber" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">[columnNumber]</OutArgument>
                             </Assign.To>
@@ -250,21 +250,21 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InterruptibleWhile>
-                    <WriteLine sap2010:Annotation.AnnotationText="Display column letter in console." DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="441.6,93.6" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;Column Letter: &quot; + columnLetter]">
+                    <WriteLine sap2010:Annotation.AnnotationText="Display column letter in console." DisplayName="Write columnLetter Line" sap:VirtualizedContainerService.HintSize="441.6,93.6" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[&quot;Column Letter: &quot; + columnLetter]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </WriteLine>
-                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="441.6,132" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
+                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="441.6,132" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadColumn>
-                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." sap:VirtualizedContainerService.HintSize="441.6,104" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." DisplayName="Assign i" sap:VirtualizedContainerService.HintSize="441.6,104" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                       </Assign.To>
@@ -277,7 +277,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each" sap:VirtualizedContainerService.HintSize="441.6,580" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each Mark" sap:VirtualizedContainerService.HintSize="441.6,580" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
@@ -289,9 +289,9 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[item.ToString]" />
-                            <ui:WriteCell Cell="[&quot;D&quot;+i.ToString]" DisplayName="Write Mark To Template Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[markTemplateSheet]" Text="[item.ToString]" WorkbookPath="[markTemplatePath]" />
-                            <Assign DisplayName="Increment I" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <WriteLine DisplayName="Write mark to console" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[item.ToString]" />
+                            <ui:WriteCell Cell="[&quot;D&quot;+i.ToString]" DisplayName="Write Mark To Di Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[markTemplateSheet]" Text="[item.ToString]" WorkbookPath="[markTemplatePath]" />
+                            <Assign DisplayName="Increment i" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_11">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                               </Assign.To>
@@ -310,7 +310,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign" sap:VirtualizedContainerService.HintSize="441.6,136" sap2010:WorkflowViewState.IdRef="Assign_14">
+                    <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign outputFolder" sap:VirtualizedContainerService.HintSize="441.6,136" sap2010:WorkflowViewState.IdRef="Assign_14">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[outputFolder]</OutArgument>
                       </Assign.To>
