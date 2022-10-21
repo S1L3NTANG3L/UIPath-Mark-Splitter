@@ -3,6 +3,7 @@
   "description": "Simple process that splits the mark schema into individual pdfs one for each student and places it in there feedback folders ready for compression and upload to efundi.",
   "main": "Main.xaml",
   "dependencies": {
+    "BalaReva.EasyExcel.Activities": "[29.1.2]",
     "BalaReva.Excel.Activities": "[2021.0.0]",
     "BalaReva.Externals.Activities": "[4.0.3]",
     "UiPath.Excel.Activities": "[2.4.6884.25683]",
@@ -29,7 +30,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",

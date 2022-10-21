@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844,6112" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bew="clr-namespace:BalaReva.Excel.WorkBook;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="863.2,5707.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:bew="clr-namespace:BalaReva.Excel.WorkBook;assembly=BalaReva.Excel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="94">
       <x:String>System.Activities</x:String>
@@ -49,10 +49,11 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.Web.Activities</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>BalaReva.EasyExcel.Tools</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="82">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -94,15 +95,16 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Web</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
-    </scg:List>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>BalaReva.EasyExcel</AssemblyReference>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="678.4,6047.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="704,5642.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="responseStatusCode" />
       <Variable x:TypeArguments="x:String" Name="responseContent" />
@@ -113,7 +115,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="636.8,5923.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="660.8,5551.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentNumbers" />
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentMarks" />
@@ -137,16 +139,16 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="Discord Integration" ChosenButton="[button]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="595.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Do you want to add a discord webhook?&quot;]" />
-      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="595.2,523.2" sap2010:WorkflowViewState.IdRef="If_9">
+      <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="YesNo" Caption="Discord Integration" ChosenButton="[button]" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="598.4,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Do you want to add a discord webhook?&quot;]" />
+      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="598.4,540.8" sap2010:WorkflowViewState.IdRef="If_9">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="375.2,334.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Title="Enter Webhook URL">
+            <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="356.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Title="Enter Webhook URL">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[webhookURL]</OutArgument>
               </ui:InputDialog.Result>
@@ -163,49 +165,49 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:SelectFile DisplayName="Browse For Mark Schema File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="595.2,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="595.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Input is case sensitive!" Title="Enter Mark Schema Sheet Name">
+      <ui:SelectFile DisplayName="Browse For Mark Schema File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="598.4,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="598.4,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Input is case sensitive!" Title="Enter Mark Schema Sheet Name">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:String">[markSchemaSheet]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:SelectFile DisplayName="Browse For Mark Template File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="595.2,139.2" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="595.2,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Input is case sensitive!" Title="Enter Mark Template Sheet Name">
+      <ui:SelectFile DisplayName="Browse For Mark Template File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="598.4,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="598.4,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Input is case sensitive!" Title="Enter Mark Template Sheet Name">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:String">[markTemplateSheet]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:SelectFolder DisplayName="Browse For Root Folder" sap:VirtualizedContainerService.HintSize="595.2,80" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[rootFolderPath]" />
-      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="595.2,119.2" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
+      <ui:SelectFolder DisplayName="Browse For Root Folder" sap:VirtualizedContainerService.HintSize="598.4,89.6" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[rootFolderPath]" />
+      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="598.4,128.8" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadRow>
-      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each studentNumber" sap:VirtualizedContainerService.HintSize="595.2,3384" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each studentNumber" sap:VirtualizedContainerService.HintSize="598.4,2869.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="studentNumber" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="560,3228" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563.2,2704" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="518.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[studentNumber.ToString]" />
-              <Assign DisplayName="Assign columnNumber" sap:VirtualizedContainerService.HintSize="518.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="520,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[studentNumber.ToString]" />
+              <Assign DisplayName="Assign columnNumber" sap:VirtualizedContainerService.HintSize="520,69.6" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[columnNumber]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:Int32">[array.IndexOf(studentNumbers.ToArray.Cast(of string).ToArray, studentNumber.ToString)]</InArgument>
+                  <InArgument x:TypeArguments="x:Int32">[array.IndexOf(studentNumbers.ToArray.Cast(of string).ToArray, studentNumber.ToString) + 1]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="518.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Column Number: &quot;+ (columnNumber+1).toString()]" />
-              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber+1 &gt; 3]" DisplayName="If columnNumber+1 &gt; 3" sap:VirtualizedContainerService.HintSize="518.4,2769.6" sap2010:WorkflowViewState.IdRef="If_8">
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="520,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Column Number: &quot;+ (columnNumber).toString()]" />
+              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber+1 &gt; 3]" DisplayName="If columnNumber+1 &gt; 3" sap:VirtualizedContainerService.HintSize="520,2218.4" sap2010:WorkflowViewState.IdRef="If_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -214,7 +216,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="483.2,2536.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <Sequence sap:VirtualizedContainerService.HintSize="484.8,1976" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="outputFolder" />
                       <Variable x:TypeArguments="x:String" Name="markShemaSheet" />
@@ -224,77 +226,23 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xA;" Cell="D1" DisplayName="Write D1 Cell" sap:VirtualizedContainerService.HintSize="441.6,160" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
+                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xA;" Cell="D1" DisplayName="Write D1 Cell" sap:VirtualizedContainerService.HintSize="441.6,169.6" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteCell>
-                    <Assign sap2010:Annotation.AnnotationText="Clear previous column letter." DisplayName="Assign columnLetter" sap:VirtualizedContainerService.HintSize="441.6,91.2" sap2010:WorkflowViewState.IdRef="Assign_18">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[columnLetter]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </Assign>
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="While loop used to convert the column number to the column letter." Condition="[columnNumber&gt;0]" DisplayName="While columnNumber&gt;0" sap:VirtualizedContainerService.HintSize="441.6,564" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
-                      <ui:InterruptibleWhile.Body>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,352.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Assign modulo" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_15">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Int32">[modulo]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Int32" xml:space="preserve">[columnNumber  mod 26]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign DisplayName="Assign columnLetter" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_16">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[columnLetter]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[Convert.ToChar(65 + modulo) + columnLetter]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <Assign DisplayName="Assign  columnNumber" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Int32">[columnNumber]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32((columnNumber-modulo) / 26)]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </Sequence>
-                      </ui:InterruptibleWhile.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:InterruptibleWhile>
-                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="441.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Column Letter: &quot; + columnLetter]" />
-                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="441.6,132" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
+                    <bet:GetColumnName ColumnIndex="[columnNumber]" ColumnName="[columnLetter]" DisplayName="Get Column Name" sap:VirtualizedContainerService.HintSize="441.6,32" sap2010:WorkflowViewState.IdRef="GetColumnName_1" />
+                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="441.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Column Letter: &quot; + columnLetter]" />
+                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="441.6,141.6" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadColumn>
-                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." DisplayName="Assign i" sap:VirtualizedContainerService.HintSize="441.6,104" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." DisplayName="Assign i" sap:VirtualizedContainerService.HintSize="441.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                       </Assign.To>
@@ -307,21 +255,21 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each Mark" sap:VirtualizedContainerService.HintSize="441.6,610.4" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each Mark" sap:VirtualizedContainerService.HintSize="441.6,647.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,441.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,468.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[item.ToString]" />
-                            <ui:WriteCell Cell="[&quot;D&quot;+i.ToString]" DisplayName="Write Mark To Di Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[markTemplateSheet]" Text="[item.ToString]" WorkbookPath="[markTemplatePath]" />
-                            <Assign DisplayName="Increment i" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="356.8,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[item.ToString]" />
+                            <ui:WriteCell Cell="[&quot;D&quot;+i.ToString]" DisplayName="Write Mark To Di Cell" sap:VirtualizedContainerService.HintSize="356.8,125.6" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[markTemplateSheet]" Text="[item.ToString]" WorkbookPath="[markTemplatePath]" />
+                            <Assign DisplayName="Increment i" sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_11">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                               </Assign.To>
@@ -340,12 +288,12 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign outputFolder" sap:VirtualizedContainerService.HintSize="441.6,136" sap2010:WorkflowViewState.IdRef="Assign_14">
+                    <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign outputFolder" sap:VirtualizedContainerService.HintSize="441.6,145.6" sap2010:WorkflowViewState.IdRef="Assign_14">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[outputFolder]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">[(Directory.GetDirectories(rootFolderPath).Where(Function(x) x.Contains(studentNumber.ToString)).ToArray).First() + "\Feedback Attachment(s)\"]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[rootFolderPath + "\"]</InArgument>
                       </Assign.Value>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -353,8 +301,8 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="441.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[outputFolder]" />
-                    <bew:ExportWorkBook CellRange="{x:Null}" ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" sap2010:Annotation.AnnotationText="Print the excel template to the student's feedback folder." ContinueOnError="False" Delay="0" DisplayName="Print excel to pdf" ExportPath="[outputFolder+studentNumber.ToString() + &quot;.pdf&quot;]" FilePath="[markTemplatePath]" FormatType="PDF" sap:VirtualizedContainerService.HintSize="441.6,100.8" sap2010:WorkflowViewState.IdRef="ExportWorkBook_2" SheetName="[markTemplateSheet]">
+                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="441.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[outputFolder]" />
+                    <bew:ExportWorkBook CellRange="{x:Null}" ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" sap2010:Annotation.AnnotationText="Print the excel template to the student's feedback folder." ContinueOnError="False" Delay="0" DisplayName="Print excel to pdf" ExportPath="[outputFolder+studentNumber.ToString() + &quot;.pdf&quot;]" FilePath="[markTemplatePath]" FormatType="PDF" sap:VirtualizedContainerService.HintSize="441.6,110.4" sap2010:WorkflowViewState.IdRef="ExportWorkBook_2" SheetName="[markTemplateSheet]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -384,15 +332,15 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="595.2,485.6" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="598.4,512.8" sap2010:WorkflowViewState.IdRef="If_10">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="375.2,296.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,314.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot; + &quot;&quot;&quot;username&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Automated Assistant&quot;&quot;&quot; + &quot;,&quot; + &quot;&quot;&quot;content&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Execution Complete&quot;&quot;&quot; + &quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[webhookURL]" sap:VirtualizedContainerService.HintSize="333.6,71.2" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[responseContent]" StatusCode="[responseStatusCode]" TimeoutMS="6000">
+            <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot; + &quot;&quot;&quot;username&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Automated Assistant&quot;&quot;&quot; + &quot;,&quot; + &quot;&quot;&quot;content&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Execution Complete&quot;&quot;&quot; + &quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[webhookURL]" sap:VirtualizedContainerService.HintSize="356.8,80.8" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" Result="[responseContent]" StatusCode="[responseStatusCode]" TimeoutMS="6000">
               <ui:HttpClient.Attachments>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.Attachments>
@@ -409,7 +357,7 @@
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.UrlSegments>
             </ui:HttpClient>
-            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[responseStatusCode.ToString + &quot;: &quot; + responseContent.ToString]" />
+            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="356.8,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[responseStatusCode.ToString + &quot;: &quot; + responseContent.ToString]" />
           </Sequence>
         </If.Then>
         <If.Else>

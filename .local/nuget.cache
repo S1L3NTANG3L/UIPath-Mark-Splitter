@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "msW73CFKwFWLrto47F9z5pRSmCFXbsuFHi7n7PfRY0tVjSxN1sseunFVXu1xdUxymdAGZ/nZ/h2tDX/RAeW5Ow==",
+  "dgSpecHash": "fk2G1tNDeSkHZtuwahEZq24ta6lTXMLPD4MlqIciSkBQqTD9rHdoQFRYXUxlns2Rqqq6X+MJ9sS/Mh8RlnKXFQ==",
   "success": true,
-  "projectFilePath": "D:\\Downloads\\UIPath-CMPG122-CS-Mark-Splitter-main\\.local\\",
+  "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Rechard\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
+    "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\balareva.easyexcel.activities.29.1.2.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\balareva.excel.activities\\2021.0.0\\balareva.excel.activities.2021.0.0.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\balareva.externals.activities.4.0.3.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",

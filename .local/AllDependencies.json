@@ -8,10 +8,30 @@
           "System.Windows.Forms"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BalaReva.EasyExcel.Activities/29.1.2": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.5.0",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1000",
+          "MicrosoftOfficeCore": "15.0.0"
+        },
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.EasyExcel.Design.dll": {},
+          "lib/BalaReva.EasyExcel.Utilities.dll": {},
+          "lib/BalaReva.EasyExcel.dll": {}
         }
       },
       "BalaReva.Excel.Activities/2021.0.0": {
@@ -52,10 +72,14 @@
           "DocumentFormat.OpenXml": "2.5.0"
         },
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net40/ClosedXML.dll": {}
+          "lib/net40/ClosedXML.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CsvHelper/16.0.0": {
@@ -65,10 +89,14 @@
           "System.ValueTuple": "4.4.0"
         },
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net45/CsvHelper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.5.0": {
@@ -90,10 +118,14 @@
           "System.Net.Http.WebRequest"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Client.dll": {}
+          "lib/net45/Microsoft.AspNet.SignalR.Client.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Connections.Abstractions/3.1.6": {
@@ -104,10 +136,14 @@
           "System.IO.Pipelines": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Connections.Client/3.1.6": {
@@ -118,10 +154,14 @@
           "Microsoft.Extensions.Options": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Connections.Common/3.1.6": {
@@ -131,10 +171,14 @@
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Features/3.1.6": {
@@ -144,10 +188,14 @@
           "System.IO.Pipelines": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Client/3.1.6": {
@@ -157,10 +205,14 @@
           "Microsoft.AspNetCore.SignalR.Client.Core": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Client.Core/3.1.6": {
@@ -174,10 +226,14 @@
           "System.Threading.Channels": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Common/3.1.6": {
@@ -188,10 +244,14 @@
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Protocols.Json/3.1.6": {
@@ -200,10 +260,14 @@
           "Microsoft.AspNetCore.SignalR.Common": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Azure.CognitiveServices.Vision.ComputerVision/7.0.1": {
@@ -236,7 +300,9 @@
           "ref/net461/_._": {}
         },
         "runtime": {
-          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.0.0": {
@@ -257,10 +323,14 @@
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.resources.dll": {
@@ -310,10 +380,14 @@
           "Microsoft.CodeAnalysis.Common": "[3.8.0]"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
@@ -363,10 +437,14 @@
           "Microsoft.CodeAnalysis.Common": "[3.8.0]"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
@@ -428,10 +506,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/3.1.6": {
@@ -440,10 +522,14 @@
           "Microsoft.Extensions.Primitives": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/3.1.6": {
@@ -452,10 +538,14 @@
           "Microsoft.Extensions.Configuration": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/3.1.6": {
@@ -465,19 +555,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6"
         },
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/3.1.6": {
@@ -489,19 +587,27 @@
           "Microsoft.Extensions.Options": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/3.1.6": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/3.1.6": {
@@ -512,10 +618,14 @@
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/3.1.6": {
@@ -525,10 +635,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
@@ -553,10 +667,14 @@
           "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".runtimeconfig.json"
+          }
         },
         "runtime": {
-          "lib/net461/Microsoft.Rest.ClientRuntime.dll": {}
+          "lib/net461/Microsoft.Rest.ClientRuntime.dll": {
+            "related": ".runtimeconfig.json"
+          }
         }
       },
       "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
@@ -566,10 +684,14 @@
           "Newtonsoft.Json": "6.0.8"
         },
         "compile": {
-          "lib/net452/_._": {}
+          "lib/net452/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
         },
         "runtime": {
-          "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+          "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
         }
       },
       "Microsoft.VisualBasic/10.3.0": {
@@ -605,10 +727,14 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NLog/4.5.11": {
@@ -626,10 +752,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/NLog.dll": {}
+          "lib/net45/NLog.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NPOI/2.2.1": {
@@ -638,22 +768,30 @@
           "SharpZipLib": "0.86.0"
         },
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".XML"
+          }
         },
         "runtime": {
           "lib/net40/NPOI.OOXML.dll": {},
           "lib/net40/NPOI.OpenXml4Net.dll": {},
           "lib/net40/NPOI.OpenXmlFormats.dll": {},
-          "lib/net40/NPOI.dll": {}
+          "lib/net40/NPOI.dll": {
+            "related": ".XML"
+          }
         }
       },
       "Polly/7.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Polly.dll": {}
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RestSharp/106.15.0": {
@@ -662,19 +800,27 @@
           "System.Web"
         ],
         "compile": {
-          "lib/net452/_._": {}
+          "lib/net452/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net452/RestSharp.dll": {}
+          "lib/net452/RestSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SharpZipLib/1.3.3": {
         "type": "package",
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -683,10 +829,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/5.0.0": {
@@ -700,10 +850,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Collections.Immutable.dll": {}
+          "lib/net461/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ComponentModel.Annotations/4.7.0": {
@@ -713,7 +867,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/_._": {}
+          "ref/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/net461/System.ComponentModel.Annotations.dll": {}
@@ -726,10 +882,14 @@
           "System"
         ],
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/System.IO.Abstractions.dll": {}
+          "lib/net40/System.IO.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Pipelines/4.7.1": {
@@ -740,10 +900,14 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.IO.Pipelines.dll": {}
+          "lib/netstandard2.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Management.Automation/6.1.7601.17515": {
@@ -767,10 +931,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -780,10 +948,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Metadata/5.0.0": {
@@ -797,10 +969,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Reflection.Metadata.dll": {}
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.1": {
@@ -809,10 +985,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/_._": {}
+          "ref/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.Encoding.CodePages/4.5.1": {
@@ -843,10 +1023,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Text.Encodings.Web.dll": {}
+          "lib/net461/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.Json/4.7.2": {
@@ -867,10 +1051,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Text.Json.dll": {}
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Channels/4.7.1": {
@@ -882,10 +1070,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Channels.dll": {}
+          "lib/net461/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/5.0.0": {
@@ -896,10 +1088,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/net461/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -911,10 +1107,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -927,7 +1127,9 @@
           "ref/net461/_._": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "UiPath/22.10.45.28867": {
@@ -1115,10 +1317,14 @@
           "System.Activities"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/UiPath.OCR.Contracts.dll": {}
+          "lib/net461/UiPath.OCR.Contracts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "UiPath.Platform/22.7.0-preview": {
@@ -1755,10 +1961,30 @@
           "System.Windows.Forms"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "BalaReva.EasyExcel.Activities/29.1.2": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.5.0",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1000",
+          "MicrosoftOfficeCore": "15.0.0"
+        },
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.EasyExcel.Design.dll": {},
+          "lib/BalaReva.EasyExcel.Utilities.dll": {},
+          "lib/BalaReva.EasyExcel.dll": {}
         }
       },
       "BalaReva.Excel.Activities/2021.0.0": {
@@ -1799,10 +2025,14 @@
           "DocumentFormat.OpenXml": "2.5.0"
         },
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net40/ClosedXML.dll": {}
+          "lib/net40/ClosedXML.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CsvHelper/16.0.0": {
@@ -1812,10 +2042,14 @@
           "System.ValueTuple": "4.4.0"
         },
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/CsvHelper.dll": {}
+          "lib/net45/CsvHelper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "DocumentFormat.OpenXml/2.5.0": {
@@ -1837,10 +2071,14 @@
           "System.Net.Http.WebRequest"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/Microsoft.AspNet.SignalR.Client.dll": {}
+          "lib/net45/Microsoft.AspNet.SignalR.Client.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Connections.Abstractions/3.1.6": {
@@ -1851,10 +2089,14 @@
           "System.IO.Pipelines": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Connections.Client/3.1.6": {
@@ -1865,10 +2107,14 @@
           "Microsoft.Extensions.Options": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Connections.Common/3.1.6": {
@@ -1878,10 +2124,14 @@
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Http.Features/3.1.6": {
@@ -1891,10 +2141,14 @@
           "System.IO.Pipelines": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Client/3.1.6": {
@@ -1904,10 +2158,14 @@
           "Microsoft.AspNetCore.SignalR.Client.Core": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Client.Core/3.1.6": {
@@ -1921,10 +2179,14 @@
           "System.Threading.Channels": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Common/3.1.6": {
@@ -1935,10 +2197,14 @@
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.SignalR.Protocols.Json/3.1.6": {
@@ -1947,10 +2213,14 @@
           "Microsoft.AspNetCore.SignalR.Common": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
+          "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Azure.CognitiveServices.Vision.ComputerVision/7.0.1": {
@@ -1983,7 +2253,9 @@
           "ref/net461/_._": {}
         },
         "runtime": {
-          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.0.0": {
@@ -2004,10 +2276,14 @@
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.resources.dll": {
@@ -2057,10 +2333,14 @@
           "Microsoft.CodeAnalysis.Common": "[3.8.0]"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
@@ -2110,10 +2390,14 @@
           "Microsoft.CodeAnalysis.Common": "[3.8.0]"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "resource": {
           "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
@@ -2175,10 +2459,14 @@
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/3.1.6": {
@@ -2187,10 +2475,14 @@
           "Microsoft.Extensions.Primitives": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration.Binder/3.1.6": {
@@ -2199,10 +2491,14 @@
           "Microsoft.Extensions.Configuration": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/3.1.6": {
@@ -2212,19 +2508,27 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6"
         },
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/net461/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/3.1.6": {
@@ -2236,19 +2540,27 @@
           "Microsoft.Extensions.Options": "3.1.6"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/3.1.6": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Options/3.1.6": {
@@ -2259,10 +2571,14 @@
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Primitives/3.1.6": {
@@ -2272,10 +2588,14 @@
           "System.Runtime.CompilerServices.Unsafe": "4.7.1"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
@@ -2300,10 +2620,14 @@
           "System.Runtime.Serialization"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".runtimeconfig.json"
+          }
         },
         "runtime": {
-          "lib/net461/Microsoft.Rest.ClientRuntime.dll": {}
+          "lib/net461/Microsoft.Rest.ClientRuntime.dll": {
+            "related": ".runtimeconfig.json"
+          }
         }
       },
       "Microsoft.Rest.ClientRuntime.Azure/3.3.18": {
@@ -2313,10 +2637,14 @@
           "Newtonsoft.Json": "6.0.8"
         },
         "compile": {
-          "lib/net452/_._": {}
+          "lib/net452/_._": {
+            "related": ".runtimeconfig.json;.xml"
+          }
         },
         "runtime": {
-          "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll": {}
+          "lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll": {
+            "related": ".runtimeconfig.json;.xml"
+          }
         }
       },
       "Microsoft.VisualBasic/10.3.0": {
@@ -2352,10 +2680,14 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {}
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NLog/4.5.11": {
@@ -2373,10 +2705,14 @@
           "System.Xml"
         ],
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net45/NLog.dll": {}
+          "lib/net45/NLog.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NPOI/2.2.1": {
@@ -2385,22 +2721,30 @@
           "SharpZipLib": "0.86.0"
         },
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".XML"
+          }
         },
         "runtime": {
           "lib/net40/NPOI.OOXML.dll": {},
           "lib/net40/NPOI.OpenXml4Net.dll": {},
           "lib/net40/NPOI.OpenXmlFormats.dll": {},
-          "lib/net40/NPOI.dll": {}
+          "lib/net40/NPOI.dll": {
+            "related": ".XML"
+          }
         }
       },
       "Polly/7.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Polly.dll": {}
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".xml"
+          }
         }
       },
       "RestSharp/106.15.0": {
@@ -2409,19 +2753,27 @@
           "System.Web"
         ],
         "compile": {
-          "lib/net452/_._": {}
+          "lib/net452/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net452/RestSharp.dll": {}
+          "lib/net452/RestSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "SharpZipLib/1.3.3": {
         "type": "package",
         "compile": {
-          "lib/net45/_._": {}
+          "lib/net45/_._": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+          "lib/net45/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "System.Buffers/4.5.1": {
@@ -2430,10 +2782,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net45/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Buffers.dll": {}
+          "lib/net461/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Collections.Immutable/5.0.0": {
@@ -2447,10 +2803,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Collections.Immutable.dll": {}
+          "lib/net461/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ComponentModel.Annotations/4.7.0": {
@@ -2460,7 +2820,9 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/_._": {}
+          "ref/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/net461/System.ComponentModel.Annotations.dll": {}
@@ -2473,10 +2835,14 @@
           "System"
         ],
         "compile": {
-          "lib/net40/_._": {}
+          "lib/net40/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net40/System.IO.Abstractions.dll": {}
+          "lib/net40/System.IO.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Pipelines/4.7.1": {
@@ -2487,10 +2853,14 @@
           "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/netstandard2.0/_._": {}
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.IO.Pipelines.dll": {}
+          "lib/netstandard2.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Management.Automation/6.1.7601.17515": {
@@ -2514,10 +2884,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Memory.dll": {}
+          "lib/net461/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -2527,10 +2901,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net46/_._": {}
+          "ref/net46/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {}
+          "lib/net46/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Reflection.Metadata/5.0.0": {
@@ -2544,10 +2922,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Reflection.Metadata.dll": {}
+          "lib/net461/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.7.1": {
@@ -2556,10 +2938,14 @@
           "mscorlib"
         ],
         "compile": {
-          "ref/net461/_._": {}
+          "ref/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.Encoding.CodePages/4.5.1": {
@@ -2584,10 +2970,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Text.Encodings.Web.dll": {}
+          "lib/net461/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Text.Json/4.7.2": {
@@ -2608,10 +2998,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Text.Json.dll": {}
+          "lib/net461/System.Text.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Channels/4.7.1": {
@@ -2623,10 +3017,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Channels.dll": {}
+          "lib/net461/System.Threading.Channels.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Dataflow/5.0.0": {
@@ -2637,10 +3035,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Dataflow.dll": {}
+          "lib/net461/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -2652,10 +3054,14 @@
           "mscorlib"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {}
+          "lib/net461/System.Threading.Tasks.Extensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -2668,7 +3074,9 @@
           "ref/net461/_._": {}
         },
         "runtime": {
-          "lib/net461/System.ValueTuple.dll": {}
+          "lib/net461/System.ValueTuple.dll": {
+            "related": ".xml"
+          }
         }
       },
       "UiPath/22.10.45.28867": {
@@ -2856,10 +3264,14 @@
           "System.Activities"
         ],
         "compile": {
-          "lib/net461/_._": {}
+          "lib/net461/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net461/UiPath.OCR.Contracts.dll": {}
+          "lib/net461/UiPath.OCR.Contracts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "UiPath.Platform/22.7.0-preview": {
@@ -3506,6 +3918,19 @@
         "lib/net45/ICSharpCode.AvalonEdit.xml",
         "lib/netcoreapp3.0/ICSharpCode.AvalonEdit.dll",
         "lib/netcoreapp3.0/ICSharpCode.AvalonEdit.xml"
+      ]
+    },
+    "BalaReva.EasyExcel.Activities/29.1.2": {
+      "sha512": "eORwe9nDgoAJEYSyK4SaByiZqLHGb1KE7GF9Y94wsGthayrNNMze5rMTN6KD8ljtXkYdgULFOYLhJSdgkwP+lw==",
+      "type": "package",
+      "path": "balareva.easyexcel.activities/29.1.2",
+      "files": [
+        ".nupkg.metadata",
+        "balareva.easyexcel.activities.29.1.2.nupkg.sha512",
+        "balareva.easyexcel.activities.nuspec",
+        "lib/BalaReva.EasyExcel.Design.dll",
+        "lib/BalaReva.EasyExcel.Utilities.dll",
+        "lib/BalaReva.EasyExcel.dll"
       ]
     },
     "BalaReva.Excel.Activities/2021.0.0": {
@@ -6419,6 +6844,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "BalaReva.EasyExcel.Activities >= 29.1.2 <= 29.1.2",
       "BalaReva.Excel.Activities >= 2021.0.0 <= 2021.0.0",
       "BalaReva.Externals.Activities >= 4.0.3 <= 4.0.3",
       "UiPath.Excel.Activities >= 2.4.6884.25683 <= 2.4.6884.25683",
@@ -6435,9 +6861,9 @@
     "restore": {
       "projectUniqueName": "CMPG122 CS Mark Splitter",
       "projectName": "CMPG122 CS Mark Splitter",
-      "projectPath": "D:\\Downloads\\UIPath-CMPG122-CS-Mark-Splitter-main\\.local",
+      "projectPath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local",
       "packagesPath": "C:\\Users\\Rechard\\.nuget\\packages\\",
-      "outputPath": "D:\\Downloads\\UIPath-CMPG122-CS-Mark-Splitter-main\\.local",
+      "outputPath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ]
@@ -6445,6 +6871,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "BalaReva.EasyExcel.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[29.1.2, 29.1.2]"
+          },
           "BalaReva.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
