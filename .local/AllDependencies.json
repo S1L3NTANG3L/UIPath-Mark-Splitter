@@ -4429,8 +4429,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "CMPG122 CS Mark Splitter",
-      "projectName": "CMPG122 CS Mark Splitter",
+      "projectUniqueName": "Rubric Creator",
+      "projectName": "Rubric Creator",
       "projectPath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local",
       "packagesPath": "C:\\Users\\Rechard\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local",

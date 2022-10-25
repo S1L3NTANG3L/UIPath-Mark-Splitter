@@ -1,5 +1,5 @@
 {
-  "name": "CMPG122 CS Mark Splitter",
+  "name": "Rubric Creator",
   "description": "Simple process that splits the mark schema into individual pdfs one for each student and places it in there feedback folders ready for compression and upload to efundi.",
   "main": "Main.xaml",
   "dependencies": {
