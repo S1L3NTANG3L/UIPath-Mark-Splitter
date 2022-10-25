@@ -2,6 +2,21 @@
   "Packages": [
     {
       "Package": {
+        "Id": "BalaReva.EasyExcel.Activities",
+        "Version": "29.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.Design.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.Utilities.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1000\\lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\microsoftofficecore\\15.0.0\\lib/net35/Office.dll"
+      ],
+      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2"
+    },
+    {
+      "Package": {
         "Id": "BalaReva.Excel.Activities",
         "Version": "2021.0.0"
       },
@@ -14,20 +29,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\microsoftofficecore\\15.0.0\\lib/net35/Office.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.excel.activities\\2021.0.0"
-    },
-    {
-      "Package": {
-        "Id": "BalaReva.Externals.Activities",
-        "Version": "4.0.3"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib/BalaReva.Externals.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib/BalaReva.Externals.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib/Ionic.Zip.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib/Newtonsoft.Json.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib/SharpCompress.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3"
     },
     {
       "Package": {
@@ -110,54 +111,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath.UIAutomation.Activities",
-        "Version": "22.10.0-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/net461/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/net452/Microsoft.Rest.ClientRuntime.Azure.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\nlog\\4.5.11\\lib/net45/NLog.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.buffers\\4.5.1\\lib/net461/System.Buffers.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.collections.immutable\\5.0.0\\lib/net461/System.Collections.Immutable.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/net40/System.IO.Abstractions.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.memory\\4.5.4\\lib/net461/System.Memory.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.threading.tasks.dataflow\\5.0.0\\lib/net461/System.Threading.Tasks.Dataflow.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib/net461/System.ValueTuple.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath\\22.10.45.28867\\lib/net45/UiPath.Interop.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net461/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\lib/net461/UiPath.ImageProcessingInterop.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib/net461/UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib/net461/UiPath.OCR.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib/net461/UiPath.OCR.Core.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.contracts\\2.13.0\\lib/net461/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.platform\\22.7.0-preview\\lib/net461/UiPath.Platform.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/net461/TelemetryClient.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UIAutomationCore.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UIAutomationNext.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.Core.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib/net461/UiPath.Vision.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview"
-    },
-    {
-      "Package": {
         "Id": "UiPath.WebAPI.Activities",
         "Version": "1.13.1"
       },
@@ -173,21 +126,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\uipath.webapi.activities\\1.13.1\\lib/net461/UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.webapi.activities\\1.13.1"
-    },
-    {
-      "Package": {
-        "Id": "BalaReva.EasyExcel.Activities",
-        "Version": "29.1.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib/BalaReva.EasyExcel.Utilities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1000\\lib/net20/Microsoft.Office.Interop.Excel.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoftofficecore\\15.0.0\\lib/net35/Office.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2"
     }
   ],
   "Conflicts": [],
@@ -228,11 +166,6 @@
           "Item2": "[15.0.0, )"
         }
       ]
-    },
-    "BalaReva.Externals.Activities": {
-      "Id": "BalaReva.Externals.Activities",
-      "Version": "4.0.3",
-      "Dependencies": []
     },
     "ClosedXML": {
       "Id": "ClosedXML",
@@ -406,24 +339,6 @@
         {
           "Item1": "Microsoft.AspNetCore.SignalR.Common",
           "Item2": "[3.1.6, )"
-        }
-      ]
-    },
-    "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
-      "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
-      "Version": "7.0.1",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.20, 3.0.0)"
-        },
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime.Azure",
-          "Item2": "[3.3.18, 4.0.0)"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[10.0.3, )"
         }
       ]
     },
@@ -624,20 +539,6 @@
         }
       ]
     },
-    "Microsoft.Rest.ClientRuntime.Azure": {
-      "Id": "Microsoft.Rest.ClientRuntime.Azure",
-      "Version": "3.3.18",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.Rest.ClientRuntime",
-          "Item2": "[2.3.17, 3.0.0)"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[6.0.8, )"
-        }
-      ]
-    },
     "Microsoft.VisualBasic": {
       "Id": "Microsoft.VisualBasic",
       "Version": "10.3.0",
@@ -658,11 +559,6 @@
       "Version": "13.0.1",
       "Dependencies": []
     },
-    "NLog": {
-      "Id": "NLog",
-      "Version": "4.5.11",
-      "Dependencies": []
-    },
     "NPOI": {
       "Id": "NPOI",
       "Version": "2.2.1",
@@ -672,11 +568,6 @@
           "Item2": "[0.86.0, )"
         }
       ]
-    },
-    "Polly": {
-      "Id": "Polly",
-      "Version": "7.1.0",
-      "Dependencies": []
     },
     "RestSharp": {
       "Id": "RestSharp",
@@ -862,21 +753,6 @@
       "Version": "4.5.0",
       "Dependencies": []
     },
-    "UiPath": {
-      "Id": "UiPath",
-      "Version": "22.10.45.28867",
-      "Dependencies": []
-    },
-    "UiPath.Activities.RuntimeGovernance": {
-      "Id": "UiPath.Activities.RuntimeGovernance",
-      "Version": "1.1.6",
-      "Dependencies": [
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[11.0.2, )"
-        }
-      ]
-    },
     "UiPath.Excel.Activities": {
       "Id": "UiPath.Excel.Activities",
       "Version": "2.4.6884.25683",
@@ -902,54 +778,6 @@
           "Item2": "[2.2.1, )"
         }
       ]
-    },
-    "UiPath.ImageProcessing": {
-      "Id": "UiPath.ImageProcessing",
-      "Version": "22.4.1",
-      "Dependencies": []
-    },
-    "UiPath.OCR.Activities": {
-      "Id": "UiPath.OCR.Activities",
-      "Version": "3.10.0",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
-          "Item2": "[7.0.1, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[13.0.1, )"
-        },
-        {
-          "Item1": "NLog",
-          "Item2": "[4.5.11, )"
-        },
-        {
-          "Item1": "Polly",
-          "Item2": "[7.1.0, )"
-        },
-        {
-          "Item1": "System.Collections.Immutable",
-          "Item2": "[5.0.0, )"
-        },
-        {
-          "Item1": "System.ValueTuple",
-          "Item2": "[4.5.0, )"
-        },
-        {
-          "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.13.0, )"
-        },
-        {
-          "Item1": "UiPath.Platform",
-          "Item2": "[22.4.1, )"
-        }
-      ]
-    },
-    "UiPath.OCR.Contracts": {
-      "Id": "UiPath.OCR.Contracts",
-      "Version": "2.13.0",
-      "Dependencies": []
     },
     "UiPath.Platform": {
       "Id": "UiPath.Platform",
@@ -1049,62 +877,6 @@
         }
       ]
     },
-    "UiPath.UIAutomation.Activities": {
-      "Id": "UiPath.UIAutomation.Activities",
-      "Version": "22.10.0-preview",
-      "Dependencies": [
-        {
-          "Item1": "UiPath",
-          "Item2": "[22.10.45.28867, 22.10.45.28867]"
-        },
-        {
-          "Item1": "UiPath.Vision",
-          "Item2": "[3.5.0, )"
-        },
-        {
-          "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.13.0, )"
-        },
-        {
-          "Item1": "UiPath.OCR.Activities",
-          "Item2": "[3.10.0, )"
-        },
-        {
-          "Item1": "UiPath.Platform",
-          "Item2": "[22.7.0-preview, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[13.0.1, )"
-        },
-        {
-          "Item1": "System.IO.Abstractions",
-          "Item2": "[3.0.10, )"
-        },
-        {
-          "Item1": "UiPath.ImageProcessing",
-          "Item2": "[22.4.1, )"
-        },
-        {
-          "Item1": "UiPath.Telemetry.Client",
-          "Item2": "[1.5.3, )"
-        },
-        {
-          "Item1": "UiPath.Activities.RuntimeGovernance",
-          "Item2": "[1.1.6, )"
-        }
-      ]
-    },
-    "UiPath.Vision": {
-      "Id": "UiPath.Vision",
-      "Version": "3.5.0",
-      "Dependencies": [
-        {
-          "Item1": "UiPath.OCR.Contracts",
-          "Item2": "[2.13.0, )"
-        }
-      ]
-    },
     "UiPath.WebAPI.Activities": {
       "Id": "UiPath.WebAPI.Activities",
       "Version": "1.13.1",
@@ -1150,8 +922,8 @@
       },
       "Assemblies": [
         "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib\\BalaReva.EasyExcel.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib\\BalaReva.EasyExcel.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib\\BalaReva.EasyExcel.Utilities.dll"
+        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib\\BalaReva.EasyExcel.Utilities.dll",
+        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\lib\\BalaReva.EasyExcel.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2"
     },
@@ -1167,20 +939,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\balareva.excel.activities\\2021.0.0\\lib\\BalaReva.Excel.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.excel.activities\\2021.0.0"
-    },
-    {
-      "Package": {
-        "Id": "BalaReva.Externals.Activities",
-        "Version": "4.0.3"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib\\BalaReva.Externals.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib\\BalaReva.Externals.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib\\Ionic.Zip.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib\\Newtonsoft.Json.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3\\lib\\SharpCompress.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\balareva.externals.activities\\4.0.3"
     },
     {
       "Package": {
@@ -1301,16 +1059,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
-        "Version": "7.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib\\net461\\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1"
     },
     {
       "Package": {
@@ -1482,16 +1230,6 @@
     },
     {
       "Package": {
-        "Id": "Microsoft.Rest.ClientRuntime.Azure",
-        "Version": "3.3.18"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib\\net452\\Microsoft.Rest.ClientRuntime.Azure.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18"
-    },
-    {
-      "Package": {
         "Id": "Microsoft.VisualBasic",
         "Version": "10.3.0"
       },
@@ -1532,16 +1270,6 @@
     },
     {
       "Package": {
-        "Id": "NLog",
-        "Version": "4.5.11"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\nlog\\4.5.11\\lib\\net45\\NLog.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\nlog\\4.5.11"
-    },
-    {
-      "Package": {
         "Id": "NPOI",
         "Version": "2.2.1"
       },
@@ -1552,16 +1280,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\npoi\\2.2.1\\lib\\net40\\NPOI.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\npoi\\2.2.1"
-    },
-    {
-      "Package": {
-        "Id": "Polly",
-        "Version": "7.1.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\polly\\7.1.0\\lib\\netstandard2.0\\Polly.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\polly\\7.1.0"
     },
     {
       "Package": {
@@ -1755,26 +1473,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath",
-        "Version": "22.10.45.28867"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath\\22.10.45.28867\\lib\\net45\\UiPath.Interop.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath\\22.10.45.28867"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Activities.RuntimeGovernance",
-        "Version": "1.1.6"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib\\net461\\UiPath.Activities.RuntimeGovernance.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6"
-    },
-    {
-      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.4.6884.25683"
       },
@@ -1784,38 +1482,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\uipath.excel.activities\\2.4.6884.25683\\lib\\net452\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.excel.activities\\2.4.6884.25683"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.ImageProcessing",
-        "Version": "22.4.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\lib\\net461\\UiPath.ImageProcessingInterop.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.imageprocessing\\22.4.1"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.OCR.Activities",
-        "Version": "3.10.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib\\net461\\UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib\\net461\\UiPath.OCR.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0\\lib\\net461\\UiPath.OCR.Core.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.10.0"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.OCR.Contracts",
-        "Version": "2.13.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.contracts\\2.13.0\\lib\\net461\\UiPath.OCR.Contracts.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.contracts\\2.13.0"
     },
     {
       "Package": {
@@ -1848,40 +1514,6 @@
         "C:\\Users\\Rechard\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib\\net461\\TelemetryClient.dll"
       ],
       "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.telemetry.client\\1.5.3"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.UIAutomation.Activities",
-        "Version": "22.10.0-preview"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.CV.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.CV.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UIAutomationCore.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UIAutomationNext.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview\\lib\\net461\\UiPath.Wizards.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "UiPath.Vision",
-        "Version": "3.5.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.Core.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0\\lib\\net461\\UiPath.Vision.dll"
-      ],
-      "Path": "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.5.0"
     },
     {
       "Package": {

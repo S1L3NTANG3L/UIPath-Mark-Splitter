@@ -5,17 +5,15 @@
   "dependencies": {
     "BalaReva.EasyExcel.Activities": "[29.1.2]",
     "BalaReva.Excel.Activities": "[2021.0.0]",
-    "BalaReva.Externals.Activities": "[4.0.3]",
     "UiPath.Excel.Activities": "[2.4.6884.25683]",
     "UiPath.System.Activities": "[22.10.0-preview]",
-    "UiPath.UIAutomation.Activities": "[22.10.0-preview]",
     "UiPath.WebAPI.Activities": "[1.13.1]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.4.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
