@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1583.2,11860.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="899.2,12316" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="94">
       <x:String>System.Activities</x:String>
@@ -106,17 +106,18 @@
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1593.6,11796" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="759.2,12251.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="1550.4,11704.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="716,12160" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentNumbers" />
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentMarks" />
@@ -150,7 +151,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,363.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_11">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,363.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_11">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,186.4" sap2010:WorkflowViewState.IdRef="Sequence_46">
             <sap:WorkflowViewStateService.ViewState>
@@ -165,7 +166,7 @@
           <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="button.ToString = &quot;&quot;" />
         </ui:InterruptibleDoWhile.Condition>
       </ui:InterruptibleDoWhile>
-      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="1488,808.8" sap2010:WorkflowViewState.IdRef="If_9">
+      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="653.6,808.8" sap2010:WorkflowViewState.IdRef="If_9">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="478.4,610.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
@@ -201,7 +202,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markSchemaPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,552" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markSchemaPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,552" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,375.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
             <sap:WorkflowViewStateService.ViewState>
@@ -214,7 +215,7 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markSchemaSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markSchemaSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
             <sap:WorkflowViewStateService.ViewState>
@@ -230,7 +231,7 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markTemplatePath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,552" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markTemplatePath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,552" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,375.2" sap2010:WorkflowViewState.IdRef="Sequence_39">
             <sap:WorkflowViewStateService.ViewState>
@@ -243,7 +244,7 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markTemplateSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markTemplateSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
@@ -259,7 +260,7 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,572.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,572.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_10">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,396" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <sap:WorkflowViewStateService.ViewState>
@@ -278,40 +279,59 @@
           <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="mode = &quot;&quot;" />
         </ui:InterruptibleDoWhile.Condition>
       </ui:InterruptibleDoWhile>
-      <If Condition="[mode = &quot;Dropbox Mode&quot;]" sap:VirtualizedContainerService.HintSize="1488,2652" sap2010:WorkflowViewState.IdRef="If_14">
+      <Assign sap:VirtualizedContainerService.HintSize="653.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Boolean">[status]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[mode = &quot;Dropbox Mode&quot;]" sap:VirtualizedContainerService.HintSize="653.6,2831.2" sap2010:WorkflowViewState.IdRef="If_14">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="478.4,2453.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
+          <Sequence sap:VirtualizedContainerService.HintSize="556.8,2632.8" sap2010:WorkflowViewState.IdRef="Sequence_34">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,733.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="513.6,912.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_6">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,556.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="478.4,736" sap2010:WorkflowViewState.IdRef="Sequence_41">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="356.8,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Example:https://efundi.nwu.ac.za/portal/site/0040417a-XXXX-XXXX-XXXX-9df0d8bf9402/tool/fa676608-XXXX-XXXX-XXXX-a9bae4383568" Title="Please enter the dropbox api">
+                  <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="435.2,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Example:https://efundi.nwu.ac.za/portal/site/0040417a-XXXX-XXXX-XXXX-9df0d8bf9402/tool/fa676608-XXXX-XXXX-XXXX-a9bae4383568" Title="Please enter the dropbox api">
                     <ui:InputDialog.Result>
                       <OutArgument x:TypeArguments="x:String">[dropboxLink]</OutArgument>
                     </ui:InputDialog.Result>
                   </ui:InputDialog>
-                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using System.Net&#xA;End Using&#xA;Try&#xA;&#x9;Dim request As HttpWebRequest = TryCast(WebRequest.Create(url), HttpWebRequest)&#xA;    request.Method = &quot;HEAD&quot;&#xA;    Dim response As HttpWebResponse = TryCast(request.GetResponse(), HttpWebResponse)&#xA;    response.Close()&#xA;    Return (response.StatusCode = HttpStatusCode.OK)&#xA;Catch&#xA;&#x9;Return False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="356.8,174.4" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
-                    <ui:InvokeCode.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="url">[dropboxLink]</InArgument>
-                      <OutArgument x:TypeArguments="x:Boolean" x:Key="status">[status]</OutArgument>
-                    </ui:InvokeCode.Arguments>
-                  </ui:InvokeCode>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,353.6" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,265.6" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using System.Net&#xA;End Using&#xA;Try&#xA;&#x9;Dim request As HttpWebRequest = TryCast(WebRequest.Create(url), HttpWebRequest)&#xA;    request.Method = &quot;HEAD&quot;&#xA;    Dim response As HttpWebResponse = TryCast(request.GetResponse(), HttpWebResponse)&#xA;    response.Close()&#xA;    Return (response.StatusCode = HttpStatusCode.OK)&#xA;Catch&#xA;&#x9;Return False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="356.8,174.4" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                          <ui:InvokeCode.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="url">[dropboxLink]</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="status">[status]</OutArgument>
+                          </ui:InvokeCode.Arguments>
+                        </ui:InvokeCode>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
               <ui:InterruptibleDoWhile.Condition>
                 <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="dropboxLink = &quot;&quot;  and status = False" />
               </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,572.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_12">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="513.6,572.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_12">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,396" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
@@ -319,7 +339,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="356.8,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="What type of report will be used: Assignment grades.xls or Tests &amp; Quizzes report.xls" OptionsString="[(&quot;Assignment Grades; Tests &amp; Quizzes Report&quot;)]" Title="Report Type">
+                  <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="356.8,304.8" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="What type of report will be used: Assignment grades.xls or Tests &amp; Quizzes report.xls" OptionsString="[(&quot;Assignment Grades;Tests &amp; Quizzes Report&quot;)]" Title="Report Type">
                     <ui:InputDialog.Result>
                       <OutArgument x:TypeArguments="x:String">[reportType]</OutArgument>
                     </ui:InputDialog.Result>
@@ -330,7 +350,7 @@
                 <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="reportType = &quot;&quot;" />
               </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[reportPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,416.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[reportPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="513.6,416.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_42">
                   <sap:WorkflowViewStateService.ViewState>
@@ -342,7 +362,7 @@
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="513.6,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_43">
                   <sap:WorkflowViewStateService.ViewState>
@@ -364,7 +384,7 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_35">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,83.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -373,12 +393,12 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="1488,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Would you like to add a prefix to the output filename? Leave empty is no." Title="File Prefix">
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="653.6,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Would you like to add a prefix to the output filename? Leave empty is no." Title="File Prefix">
         <ui:InputDialog.Result>
           <OutArgument x:TypeArguments="x:String">[prefix]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[rootFolderPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,357.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_9">
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[rootFolderPath = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="653.6,357.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_9">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,180.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <sap:WorkflowViewStateService.ViewState>
@@ -390,14 +410,14 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="1488,128.8" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
+      <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="653.6,128.8" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ReadRow>
-      <Assign sap:VirtualizedContainerService.HintSize="1488,69.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+      <Assign sap:VirtualizedContainerService.HintSize="653.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_16">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[c]</OutArgument>
         </Assign.To>
@@ -405,19 +425,19 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each studentNumber" sap:VirtualizedContainerService.HintSize="1488,3171.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each student number in the datatable." DisplayName="For Each studentNumber" sap:VirtualizedContainerService.HintSize="653.6,3337.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[studentNumbers]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="studentNumber" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1452.8,3005.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="618.4,3172" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="1409.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+              <Assign sap:VirtualizedContainerService.HintSize="575.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_17">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[c]</OutArgument>
                 </Assign.To>
@@ -425,8 +445,8 @@
                   <InArgument x:TypeArguments="x:Int32">[c + 1]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1409.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[studentNumber.ToString]" />
-              <Assign DisplayName="Assign columnNumber" sap:VirtualizedContainerService.HintSize="1409.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="575.2,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[studentNumber.ToString]" />
+              <Assign DisplayName="Assign columnNumber" sap:VirtualizedContainerService.HintSize="575.2,69.6" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[columnNumber]</OutArgument>
                 </Assign.To>
@@ -434,8 +454,8 @@
                   <InArgument x:TypeArguments="x:Int32">[c]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1409.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Column Number: &quot;+ (columnNumber).toString()]" />
-              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber &gt; 3]" DisplayName="If columnNumber+1 &gt; 3" sap:VirtualizedContainerService.HintSize="1409.6,2410.4" sap2010:WorkflowViewState.IdRef="If_8">
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="575.2,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Column Number: &quot;+ (columnNumber).toString()]" />
+              <If sap2010:Annotation.AnnotationText="The If statement gets used to skip the first three columns as they are the mark indication columns." Condition="[columnNumber &gt; 3]" DisplayName="If columnNumber+1 &gt; 3" sap:VirtualizedContainerService.HintSize="575.2,2576.8" sap2010:WorkflowViewState.IdRef="If_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -444,7 +464,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="1374.4,2180.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <Sequence sap:VirtualizedContainerService.HintSize="540,2347.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="outputFolder" />
                       <Variable x:TypeArguments="x:String" Name="markShemaSheet" />
@@ -454,23 +474,23 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xA;" Cell="D1" DisplayName="Write D1 Cell" sap:VirtualizedContainerService.HintSize="1331.2,169.6" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
+                    <ui:WriteCell sap2010:Annotation.AnnotationText="Write the student number to the mark template&#xA;" Cell="D1" DisplayName="Write D1 Cell" sap:VirtualizedContainerService.HintSize="496.8,169.6" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[markTemplateSheet]" Text="[studentNumber.ToString]" WorkbookPath="[markTemplatePath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteCell>
-                    <bet:GetColumnName ColumnIndex="[columnNumber]" ColumnName="[columnLetter]" DisplayName="Get Column Name" sap:VirtualizedContainerService.HintSize="1331.2,32" sap2010:WorkflowViewState.IdRef="GetColumnName_1" />
-                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1331.2,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Column Letter: &quot; + columnLetter]" />
-                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="1331.2,141.6" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
+                    <bet:GetColumnName ColumnIndex="[columnNumber]" ColumnName="[columnLetter]" DisplayName="Get Column Name" sap:VirtualizedContainerService.HintSize="496.8,32" sap2010:WorkflowViewState.IdRef="GetColumnName_1" />
+                    <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="496.8,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Column Letter: &quot; + columnLetter]" />
+                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="496.8,141.6" sap2010:WorkflowViewState.IdRef="ReadColumn_4" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadColumn>
-                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." DisplayName="Assign i" sap:VirtualizedContainerService.HintSize="1331.2,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign sap2010:Annotation.AnnotationText="i Used to shift the row in the mark template." DisplayName="Assign i" sap:VirtualizedContainerService.HintSize="496.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                       </Assign.To>
@@ -483,7 +503,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each Mark" sap:VirtualizedContainerService.HintSize="1331.2,647.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
+                    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through all the marks of the student and add them to the mark template." DisplayName="For Each Mark" sap:VirtualizedContainerService.HintSize="496.8,647.2" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[studentMarks]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
@@ -516,77 +536,39 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <If Condition="[mode = &quot;Assignment Mode&quot;]" sap:VirtualizedContainerService.HintSize="1331.2,643.2" sap2010:WorkflowViewState.IdRef="If_11">
-                      <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="400,214.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assignment.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Assignment.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="887.2,474.4" sap2010:WorkflowViewState.IdRef="Sequence_28">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[mode = &quot;Dropbox Mode&quot;]" sap:VirtualizedContainerService.HintSize="844,383.2" sap2010:WorkflowViewState.IdRef="If_13">
-                            <If.Then>
-                              <Sequence sap:VirtualizedContainerService.HintSize="400,214.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DropBox.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DropBox.xaml">
-                                  <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">[dropboxLink]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportPath">[reportPath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportSheet">[reportSheet]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportType">[reportType]</InArgument>
-                                  </ui:InvokeWorkflowFile.Arguments>
-                                </ui:InvokeWorkflowFile>
-                              </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="400,214.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Other.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Other.xaml">
-                                  <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
-                                  </ui:InvokeWorkflowFile.Arguments>
-                                </ui:InvokeWorkflowFile>
-                              </Sequence>
-                            </If.Else>
-                          </If>
-                        </Sequence>
-                      </If.Else>
-                    </If>
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[mode]" sap:VirtualizedContainerService.HintSize="496.8,809.6" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="&quot;Assignment Mode&quot;" DisplayName="Assignment.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Assignment.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="&quot;Dropbox Mode&quot;" DisplayName="DropBox.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DropBox.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">[dropboxLink]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="reportPath">[reportPath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="reportSheet">[reportSheet]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="reportType">[reportType]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" x:Key="&quot;Other Mode&quot;" DisplayName="Other.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Other.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                          <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                    </Switch>
                   </Sequence>
                 </If.Then>
                 <If.Else>
@@ -610,7 +592,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="1488,512.8" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[button.ToString = &quot;Yes&quot;]" sap:VirtualizedContainerService.HintSize="653.6,512.8" sap2010:WorkflowViewState.IdRef="If_10">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="400,314.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
             <sap:WorkflowViewStateService.ViewState>
