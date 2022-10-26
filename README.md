@@ -1,6 +1,6 @@
 # UIPath-Mark-Splitter
 Tiny UIPath automation process I wrote to take the given markschema and create an individual marksheet for each student and print it to there feedback folder.</br>
-## Using Steps
+## Using Steps #Outdated
 1. Place mark schema and mark template in root folder of efundi download folder.
 2. Note down the sheet names in each spreadsheet **NB The sheet name is case sensitive**
 3. Make sure the template will print correctly before starting the process.
