@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1292.8,977.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>939.2,1229.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Assignment_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -69,28 +69,31 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>BalaReva.Excel.Utilities</AssemblyReference>
       <AssemblyReference>BalaReva.Excel</AssemblyReference>
       <AssemblyReference>BalaReva.Excel.Base</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Assignment" sap:VirtualizedContainerService.HintSize="1119.2,912.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Assignment" sap:VirtualizedContainerService.HintSize="949.6,1164.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="1076,821.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap:VirtualizedContainerService.HintSize="906.4,1073.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="outputFolder" />
+        <Variable x:TypeArguments="x:String" Name="outputPath" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign outputFolder" sap:VirtualizedContainerService.HintSize="1013.6,145.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap2010:Annotation.AnnotationText="Find the student's folder within the root directory using there student number and concatenate the feedback folder to the end of the path." DisplayName="Assign outputFolder" sap:VirtualizedContainerService.HintSize="844,145.6" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[outputFolder]</OutArgument>
         </Assign.To>
@@ -103,41 +106,51 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1013.6,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[outputFolder]" />
-      <If Condition="[prefix = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="1013.6,370.4" sap2010:WorkflowViewState.IdRef="If_1">
+      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="844,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[outputFolder]" />
+      <If Condition="[prefix = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="844,329.6" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="484.8,201.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,160.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <bew:ExportWorkBook CellRange="{x:Null}" ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" sap2010:Annotation.AnnotationText="Print the excel template to the student's feedback folder." ContinueOnError="False" Delay="0" DisplayName="Print excel to pdf" ExportPath="[outputFolder+studentNumber.ToString() + &quot;.pdf&quot;]" FilePath="[markTemplatePath]" FormatType="PDF" sap:VirtualizedContainerService.HintSize="441.6,110.4" sap2010:WorkflowViewState.IdRef="ExportWorkBook_1" SheetName="[markTemplateSheet]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </bew:ExportWorkBook>
+            <Assign sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[outputPath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[outputFolder+studentNumber.ToString() + ".pdf"]</InArgument>
+              </Assign.Value>
+            </Assign>
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="484.8,201.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,160.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <bew:ExportWorkBook CellRange="{x:Null}" ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" sap2010:Annotation.AnnotationText="Print the excel template to the student's feedback folder." ContinueOnError="False" Delay="0" DisplayName="Print excel to pdf" ExportPath="[outputFolder+prefix+&quot;-&quot;+studentNumber.ToString() + &quot;.pdf&quot;]" FilePath="[markTemplatePath]" FormatType="PDF" sap:VirtualizedContainerService.HintSize="441.6,110.4" sap2010:WorkflowViewState.IdRef="ExportWorkBook_2" SheetName="[markTemplateSheet]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </bew:ExportWorkBook>
+            <Assign sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[outputPath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[outputFolder+prefix+"-"+studentNumber.ToString() + ".pdf"]</InArgument>
+              </Assign.Value>
+            </Assign>
           </Sequence>
         </If.Else>
       </If>
+      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="844,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[outputPath]" />
+      <bew:ExportWorkBook CellRange="{x:Null}" ExecutionResult="{x:Null}" FilePassword="{x:Null}" ModifyPassword="{x:Null}" sap2010:Annotation.AnnotationText="Print the excel template to the student's feedback folder." ContinueOnError="False" Delay="0" DisplayName="Print excel to pdf" ExportPath="[outputPath]" FilePath="[markTemplatePath]" FormatType="PDF" sap:VirtualizedContainerService.HintSize="844,110.4" sap2010:WorkflowViewState.IdRef="ExportWorkBook_1" SheetName="[markTemplateSheet]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </bew:ExportWorkBook>
     </Sequence>
   </Sequence>
 </Activity>
