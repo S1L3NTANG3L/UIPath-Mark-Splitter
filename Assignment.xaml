@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>939.2,1229.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>939.2,1372</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Assignment_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -41,6 +41,16 @@
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>BalaReva.Excel.WorkBook</x:String>
       <x:String>BalaReva.Excel.Base</x:String>
+      <x:String>System.Windows.Forms</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Windows.Forms.Layout</x:String>
+      <x:String>UiPathTeam_StatusProgress_Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Windows.Forms.Automation</x:String>
+      <x:String>System.Xml.Serialization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -73,17 +83,20 @@
       <AssemblyReference>BalaReva.Excel</AssemblyReference>
       <AssemblyReference>BalaReva.Excel.Base</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>UiPathTeam.StatusProgress.Activities</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Assignment" sap:VirtualizedContainerService.HintSize="949.6,1164.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Assignment" sap:VirtualizedContainerService.HintSize="949.6,1307.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="906.4,1073.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap:VirtualizedContainerService.HintSize="906.4,1216" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="outputFolder" />
         <Variable x:TypeArguments="x:String" Name="outputPath" />
@@ -107,7 +120,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
       <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="844,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[outputFolder]" />
-      <If Condition="[prefix = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="844,329.6" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[prefix = &quot;No&quot;]" sap:VirtualizedContainerService.HintSize="844,329.6" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="400,160.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
@@ -151,6 +164,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </bew:ExportWorkBook>
+      <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="844,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;File Printed&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T0Ot3XQRkfORk9ZQzbFLYSELqbkS+5laWqZcn2H4QAwRF1ql+vP5dHYbcpDR9xT4V2yhXyP2/qWgOxKhYveZqQ==",
+  "dgSpecHash": "8zZqtQK6lbEWze6iMKYI8ezoYVgh6SCLjUKQ2sas6d43vNFGZsJQBPwk1NHJrHs7DRMeurwgkJRRHhtnXXZDJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local\\",
   "expectedPackageFiles": [
@@ -71,12 +71,13 @@
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\uipath.imageprocessing.22.4.1.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.activities\\3.6.2\\uipath.ocr.activities.3.6.2.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.ocr.contracts\\2.11.0\\uipath.ocr.contracts.2.11.0.nupkg.sha512",
-    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.platform\\22.7.0-preview\\uipath.platform.22.7.0-preview.nupkg.sha512",
-    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.system.activities\\22.10.0-preview\\uipath.system.activities.22.10.0-preview.nupkg.sha512",
+    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.platform\\22.10.2\\uipath.platform.22.10.2.nupkg.sha512",
+    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.system.activities\\22.10.3\\uipath.system.activities.22.10.3.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\uipath.uiautomation.activities.22.4.7.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\uipath.vision\\3.3.0\\uipath.vision.3.3.0.nupkg.sha512",
-    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.webapi.activities\\1.13.1\\uipath.webapi.activities.1.13.1.nupkg.sha512"
+    "C:\\Users\\Rechard\\.nuget\\packages\\uipath.webapi.activities\\1.13.1\\uipath.webapi.activities.1.13.1.nupkg.sha512",
+    "C:\\Users\\Rechard\\.nuget\\packages\\uipathteam.statusprogress.activities\\1.0.2\\uipathteam.statusprogress.activities.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }
