@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1583.2,10801.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1583.2,11515.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
       <x:String>System.Activities</x:String>
@@ -120,14 +120,14 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1593.6,10736.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1593.6,11450.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="1550.4,10645.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="1550.4,11359.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentNumbers" />
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentMarks" />
@@ -200,25 +200,21 @@
         </If.Else>
       </If>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1488,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Open the markschema spreedsheet in the next step.&quot;]" />
-      <ui:RetryScope ContinueOnError="False" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1488,507.2" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5">
-        <ui:RetryScope.ActivityBody>
-          <ActivityAction>
-            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_53">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:SelectFile DisplayName="Browse For Mark Schema File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="356.8,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
-            </Sequence>
-          </ActivityAction>
-        </ui:RetryScope.ActivityBody>
-        <ui:RetryScope.Condition>
-          <ActivityFunc x:TypeArguments="x:Boolean">
-            <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[File.Exists(markSchemaPath)]" sap:VirtualizedContainerService.HintSize="333.6,97.6" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
-          </ActivityFunc>
-        </ui:RetryScope.Condition>
-      </ui:RetryScope>
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,416.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_15">
+        <ui:InterruptibleDoWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_60">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SelectFile DisplayName="Browse For Mark Schema File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="356.8,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
+          </Sequence>
+        </ui:InterruptibleDoWhile.Body>
+        <ui:InterruptibleDoWhile.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not(File.Exists(markSchemaPath))" />
+        </ui:InterruptibleDoWhile.Condition>
+      </ui:InterruptibleDoWhile>
       <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markSchemaSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
@@ -236,7 +232,21 @@
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
       <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1488,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Open the template spreedsheet in the next step.&quot;]" />
-      <ui:SelectFile DisplayName="Browse For Mark Template File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="1488,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,416.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_14">
+        <ui:InterruptibleDoWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_59">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SelectFile DisplayName="Browse For Mark Template File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="356.8,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
+          </Sequence>
+        </ui:InterruptibleDoWhile.Body>
+        <ui:InterruptibleDoWhile.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not(File.Exists(markTemplatePath))" />
+        </ui:InterruptibleDoWhile.Condition>
+      </ui:InterruptibleDoWhile>
       <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[markTemplateSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
@@ -269,9 +279,9 @@
           </Sequence>
         </ui:InterruptibleDoWhile.Body>
       </ui:InterruptibleDoWhile>
-      <If Condition="[mode = &quot;Dropbox Mode&quot;]" sap:VirtualizedContainerService.HintSize="1488,2304.8" sap2010:WorkflowViewState.IdRef="If_14">
+      <If Condition="[mode = &quot;Dropbox Mode&quot;]" sap:VirtualizedContainerService.HintSize="1488,2572.8" sap2010:WorkflowViewState.IdRef="If_14">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="478.4,2106.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+          <Sequence sap:VirtualizedContainerService.HintSize="478.4,2374.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -310,7 +320,21 @@
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="435.2,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Open the report spreedsheet in the next step.&quot;]" />
-            <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="435.2,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_3" SelectedFile="[reportPath]" />
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,416.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_16">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="356.8,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_3" SelectedFile="[reportPath]" />
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not(File.Exists(reportPath))" />
+              </ui:InterruptibleDoWhile.Condition>
+            </ui:InterruptibleDoWhile>
             <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[reportSheet = &quot;&quot;]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="435.2,519.2" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
               <ui:InterruptibleDoWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,342.4" sap2010:WorkflowViewState.IdRef="Sequence_43">
@@ -373,7 +397,21 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:SelectFolder DisplayName="Browse For Root Folder" sap:VirtualizedContainerService.HintSize="1488,89.6" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[rootFolderPath]" />
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,357.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_13">
+        <ui:InterruptibleDoWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,180.8" sap2010:WorkflowViewState.IdRef="Sequence_58">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SelectFolder DisplayName="Browse For Root Folder" sap:VirtualizedContainerService.HintSize="356.8,89.6" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[rootFolderPath]" />
+          </Sequence>
+        </ui:InterruptibleDoWhile.Body>
+        <ui:InterruptibleDoWhile.Condition>
+          <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not(Directory.Exists(rootFolderPath))" />
+        </ui:InterruptibleDoWhile.Condition>
+      </ui:InterruptibleDoWhile>
       <ui:ReadRow sap2010:Annotation.AnnotationText="Read the row that contains all the student numbers." DisplayName="Read studentNumbers Row" sap:VirtualizedContainerService.HintSize="1488,128.8" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[studentNumbers]" SheetName="[markSchemaSheet]" StartingCell="A2" WorkbookPath="[markSchemaPath]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
