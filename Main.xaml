@@ -108,10 +108,10 @@
       <AssemblyReference>BalaReva.EasyExcel</AssemblyReference>
       <AssemblyReference>Dropbox.Api</AssemblyReference>
       <AssemblyReference>Swaraj.Dropbox.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Windows.Forms</AssemblyReference>
       <AssemblyReference>UiPathTeam.StatusProgress.Activities</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -449,14 +449,14 @@
                     </ui:WriteCell>
                     <bet:GetColumnName ColumnIndex="[columnNumber]" ColumnName="[columnLetter]" DisplayName="Get Column Name" sap:VirtualizedContainerService.HintSize="1331.2,32" sap2010:WorkflowViewState.IdRef="GetColumnName_1" />
                     <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="1331.2,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Column Letter: &quot; + columnLetter]" />
-                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="1331.2,141.6" sap2010:WorkflowViewState.IdRef="ReadColumn_5" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;3&quot;]" WorkbookPath="[markSchemaPath]">
+                    <ui:ReadColumn sap2010:Annotation.AnnotationText="Read the column containing all the marks of a certain student." DisplayName="Read Marks Column" sap:VirtualizedContainerService.HintSize="1331.2,141.6" sap2010:WorkflowViewState.IdRef="ReadColumn_5" Result="[studentMarks]" SheetName="[markSchemaSheet]" StartingCell="[columnLetter + &quot;2&quot;]" WorkbookPath="[markSchemaPath]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadColumn>
-                    <ui:ReadRange AddHeaders="True" DataTable="[studentMarks2]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1331.2,97.6" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="[columnLetter + &quot;3:&quot; + columnLetter + (studentMarks.Count+1).ToString]" SheetName="[markSchemaSheet]" WorkbookPath="[markSchemaPath]" />
+                    <ui:ReadRange AddHeaders="True" DataTable="[studentMarks2]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1331.2,97.6" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="[columnLetter + &quot;2:&quot; + columnLetter + (studentMarks.Count+1).ToString]" SheetName="[markSchemaSheet]" WorkbookPath="[markSchemaPath]" />
                     <ui:WriteRange AddHeaders="False" DataTable="[studentMarks2]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="1331.2,125.6" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[markTemplateSheet]" StartingCell="[&quot;D2:D&quot; + (studentMarks.Count+1).ToString]" WorkbookPath="[markTemplatePath]" />
                     <If Condition="[mode = &quot;Assignment Mode&quot;]" sap:VirtualizedContainerService.HintSize="1331.2,715.2" sap2010:WorkflowViewState.IdRef="If_15">
                       <If.Then>
@@ -468,21 +468,11 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Assignment.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Assignment.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">
-                                <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="studentNumber" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rootFolderPath" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="prefix">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="prefix" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplatePath" />
-                              </InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">
-                                <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplateSheet" />
-                              </InArgument>
+                              <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                           </ui:InvokeWorkflowFile>
                           <u:Close_Status Container="[status]" DisplayName="Close Status" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Close_Status_1" />
@@ -505,33 +495,15 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DropBox.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DropBox.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">
-                                      <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="studentNumber" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="prefix" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplatePath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplateSheet" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rootFolderPath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="dropboxLink" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportPath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="reportPath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportSheet">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="reportSheet" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportType">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="reportType" />
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">[dropboxLink]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="reportPath">[reportPath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="reportSheet">[reportSheet]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="reportType">[reportType]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <u:Close_Status Container="[status]" DisplayName="Close Status" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Close_Status_2" />
@@ -546,21 +518,11 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Other.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Other.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rootFolderPath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="prefix" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplatePath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplateSheet" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">
-                                      <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="studentNumber" />
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <u:Close_Status Container="[status]" DisplayName="Close Status" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Close_Status_3" />
