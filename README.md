@@ -18,3 +18,4 @@ Using Steps
 10. A second open file dialog will appear, use it to open the rubric template.
 11. Choose the root folder that either contains all the individual  student folders or the appropriate folder if other mode was chosen earlier.
 12. Process will now start up and run in the background, a completion dialog will appear in the top left corner to keep you up to date with the current progress.
+![UI](https://i.imgur.com/A6n6BoD.png)
