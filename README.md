@@ -1,7 +1,7 @@
 # UIPath-Mark-Splitter
 Tiny UIPath automation process I wrote to take the given markschema and create an individual marksheet for each student and print it to there feedback folder.</br>
 ## Using Steps
-Using Steps
+*WARNING! The process will kill any running excel process when you click start!
 1. Note down the sheet names of both the mark schema spreadsheet and template spreadsheet
 * NB The sheet name is case sensitive
 2. Enter the markschema sheet name, Rubric template sheet name.
