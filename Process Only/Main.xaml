@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.markSchemaSheet="Sheet1" this:Main.markTemplateSheet="Sheet1" this:Main.webhookURL="None" this:Main.dropboxLink="https://efundi.nwu.ac.za/portal/site/0040417a-0e91-4813-8f4d-9df0d8bf9402/tool/fa676608-b998-4698-ba65-a9bae4383568?panel=Main#/group-user/0040417a-0e91-4813-8f4d-9df0d8bf9402/41072782/" this:Main.prefix="This is a test" this:Main.operationMode="Drop Box Mode" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:this="clr-namespace:" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="markSchemaSheet" Type="InArgument(x:String)" />
     <x:Property Name="markTemplateSheet" Type="InArgument(x:String)" />
@@ -124,7 +124,6 @@
       <AssemblyReference>System.Windows.Forms</AssemblyReference>
       <AssemblyReference>UiPathTeam.StatusProgress.Activities</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -341,24 +340,12 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DropBox.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DropBox.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">
-                                      <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="studentNumber" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="prefix" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplatePath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplateSheet" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rootFolderPath" />
-                                    </InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">
-                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="dropboxLink" />
-                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">[dropboxLink]</InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <u:Close_Status Container="[status]" DisplayName="Close Status" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Close_Status_2" />
