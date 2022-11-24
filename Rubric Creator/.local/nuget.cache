@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8zZqtQK6lbEWze6iMKYI8ezoYVgh6SCLjUKQ2sas6d43vNFGZsJQBPwk1NHJrHs7DRMeurwgkJRRHhtnXXZDJw==",
+  "dgSpecHash": "QpOMjXmISsXwSYgq4avL/KNx6lpe6apQ8+dXhD926uTRbR01+dd2wLKiHkt4KFRkndTO33SyE4l2ufEWmogzxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\.local\\",
+  "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\Rubric Creator\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Rechard\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\balareva.easyexcel.activities.29.1.2.nupkg.sha512",
