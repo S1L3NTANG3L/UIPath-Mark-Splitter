@@ -1,18 +1,16 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.markSchemaSheet="Sheet1" this:Main.markTemplateSheet="Sheet1" this:Main.webhookURL="None" this:Main.dropboxLink="https://efundi.nwu.ac.za/portal/site/0040417a-0e91-4813-8f4d-9df0d8bf9402/tool/fa676608-b998-4698-ba65-a9bae4383568?panel=Main#/group-user/0040417a-0e91-4813-8f4d-9df0d8bf9402/41072782/" this:Main.prefix="This is a test" this:Main.operationMode="Drop Box Mode" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:bet="clr-namespace:BalaReva.EasyExcel.Tools;assembly=BalaReva.EasyExcel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:this="clr-namespace:" xmlns:u="clr-namespace:UiPathTeam_StatusProgress_Activities;assembly=UiPathTeam.StatusProgress.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="markSchemaSheet" Type="InArgument(x:String)" />
     <x:Property Name="markTemplateSheet" Type="InArgument(x:String)" />
     <x:Property Name="webhookURL" Type="InArgument(x:String)" />
     <x:Property Name="dropboxLink" Type="InArgument(x:String)" />
     <x:Property Name="prefix" Type="InArgument(x:String)" />
-    <x:Property Name="reportType" Type="InArgument(x:String)" />
-    <x:Property Name="reportSheet" Type="InArgument(x:String)" />
     <x:Property Name="operationMode" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1583.2,5172.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1583.2,5431.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
@@ -126,6 +124,7 @@
       <AssemblyReference>System.Windows.Forms</AssemblyReference>
       <AssemblyReference>UiPathTeam.StatusProgress.Activities</AssemblyReference>
       <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -134,14 +133,14 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1593.6,5108" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" sap:VirtualizedContainerService.HintSize="1593.6,5366.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="1550.4,5016.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Do - Your code" sap:VirtualizedContainerService.HintSize="1550.4,5275.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentNumbers" />
         <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="studentMarks" />
@@ -160,7 +159,6 @@
         <Variable x:TypeArguments="x:String" Name="prefixButton" />
         <Variable x:TypeArguments="x:String" Name="markSchemaPath" />
         <Variable x:TypeArguments="x:String" Name="markTemplatePath" />
-        <Variable x:TypeArguments="x:String" Name="reportPath" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -169,21 +167,37 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="1488,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
-      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="1488,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
-      <If Condition="[operationMode = &quot;Drop Box Mode&quot;]" sap:VirtualizedContainerService.HintSize="1488,438.4" sap2010:WorkflowViewState.IdRef="If_17">
+      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="1488,144" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="EXCEL.exe" />
+      <If Condition="[not(webhookURL = &quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="1488,512.8" sap2010:WorkflowViewState.IdRef="If_18">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_59">
+          <Sequence sap:VirtualizedContainerService.HintSize="400,314.4" sap2010:WorkflowViewState.IdRef="Sequence_61">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SelectFile DisplayName="Browse For File" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="356.8,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_3" SelectedFile="[reportPath]" />
+            <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[&quot;{&quot; + &quot;&quot;&quot;username&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Automated Assistant&quot;&quot;&quot; + &quot;,&quot; + &quot;&quot;&quot;content&quot;&quot;&quot; + &quot;:&quot; + &quot;&quot;&quot;Execution Started&quot;&quot;&quot; + &quot;}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[webhookURL]" sap:VirtualizedContainerService.HintSize="356.8,80.8" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" Result="[responseContent]" StatusCode="[responseStatusCode]" TimeoutMS="6000">
+              <ui:HttpClient.Attachments>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Attachments>
+              <ui:HttpClient.Cookies>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Cookies>
+              <ui:HttpClient.Headers>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Headers>
+              <ui:HttpClient.Parameters>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Parameters>
+              <ui:HttpClient.UrlSegments>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.UrlSegments>
+            </ui:HttpClient>
+            <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="356.8,102.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[responseStatusCode.ToString + &quot;: &quot; + responseContent.ToString]" />
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence sap:VirtualizedContainerService.HintSize="241.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_60">
+          <Sequence sap:VirtualizedContainerService.HintSize="241.6,84.8" sap2010:WorkflowViewState.IdRef="Sequence_62">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,6 +206,8 @@
           </Sequence>
         </If.Else>
       </If>
+      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="1488,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[markSchemaPath]" />
+      <ui:SelectFile DisplayName="Browse For File" Filter="Excel|*.xlsx;*.xls;*.xlsm;*.xlsb" sap:VirtualizedContainerService.HintSize="1488,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_2" SelectedFile="[markTemplatePath]" />
       <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not(Directory.Exists(rootFolderPath))]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1488,357.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_13">
         <ui:InterruptibleDoWhile.Body>
           <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,180.8" sap2010:WorkflowViewState.IdRef="Sequence_58">
@@ -325,15 +341,24 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DropBox.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,123.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="DropBox.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
-                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">[studentNumber]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">[prefix]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">[markTemplatePath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">[markTemplateSheet]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">[rootFolderPath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">[dropboxLink]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportPath">[reportPath]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportSheet">[reportSheet]</InArgument>
-                                    <InArgument x:TypeArguments="x:String" x:Key="reportType">[reportType]</InArgument>
+                                    <InArgument x:TypeArguments="x:Object" x:Key="studentNumber">
+                                      <mva:VisualBasicValue x:TypeArguments="x:Object" ExpressionText="studentNumber" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="prefix">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="prefix" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplatePath">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplatePath" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="markTemplateSheet">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="markTemplateSheet" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="rootFolderPath">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="rootFolderPath" />
+                                    </InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="dropboxLink">
+                                      <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="dropboxLink" />
+                                    </InArgument>
                                   </ui:InvokeWorkflowFile.Arguments>
                                 </ui:InvokeWorkflowFile>
                                 <u:Close_Status Container="[status]" DisplayName="Close Status" sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Close_Status_2" />
@@ -385,7 +410,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <If Condition="[not(webhookURL = &quot;&quot;)]" sap:VirtualizedContainerService.HintSize="1488,512.8" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[not(webhookURL = &quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="1488,512.8" sap2010:WorkflowViewState.IdRef="If_10">
         <If.Then>
           <Sequence sap:VirtualizedContainerService.HintSize="400,314.4" sap2010:WorkflowViewState.IdRef="Sequence_25">
             <sap:WorkflowViewStateService.ViewState>

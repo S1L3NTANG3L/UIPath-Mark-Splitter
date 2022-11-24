@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cHNeklhNGA7g3OXJ5L4r+xKj875mTCl48wJ5BRcv5aCQcGxWJ1A4tiyaBVl8ZKHDVLKzvQTkkSEeIcve8zZYMg==",
+  "dgSpecHash": "LqzXtLJhdp1zoOaUXlOUn5OOeLeo3swJg0QiaMpeNmN5+20FRf2k7s81Wf6Qk6+BIhyXn7j1xYln+MtIm24IQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter - Process Only\\.local\\",
+  "projectFilePath": "C:\\Users\\Rechard\\Documents\\Projects\\UIPath-Mark-Splitter\\Process Only\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Rechard\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\Rechard\\.nuget\\packages\\balareva.easyexcel.activities\\29.1.2\\balareva.easyexcel.activities.29.1.2.nupkg.sha512",
